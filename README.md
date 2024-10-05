@@ -2,7 +2,7 @@
 
 ## Table of content
 - [Overview](#overview)
-- [Arduino Components](#arduino-components)
+- [Arduino Components](#getting-started-with-arduino-components)
 - [Tinkercad Simulator](#tinkercad-simulator)
 - [Circuits](#circuits)
   - [On/Off LED Circuit](#onoff-led-circuit)
@@ -13,9 +13,16 @@ This repository documents my learning process in implementing Arduino circuits, 
 
 
 
-## Arduino Components
-### Arduino
+## Getting Started with Arduino Components
+
+### Arduino UNO R3
+![s-l400](https://github.com/user-attachments/assets/d6ede363-3aba-4aaa-9eda-269f558c0df2)
+
+Arduino is a microcontroller board that reads inputs like a push of a button or light on a senors, and turn it into an output like turning on an LED.([What is Arduino?](https://docs.arduino.cc/learn/starting-guide/whats-arduino/) )
+
 ### Digital Pins
+
+
 #### Analog Pins (PWM)
 #### Ground Pin
 ### Breadboard
@@ -25,6 +32,9 @@ This repository documents my learning process in implementing Arduino circuits, 
 
 ## Tinkercad Simulator
 
+## Electronics
+### Ohm`s Law
+
 
 ## circuits
 ### On/Off LED Circuit
@@ -33,6 +43,7 @@ This repository documents my learning process in implementing Arduino circuits, 
 #### Digital Circuit
 #### Physical Circuit
 #### Bug report
+
 
 
 
