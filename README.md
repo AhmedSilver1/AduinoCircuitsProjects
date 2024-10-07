@@ -91,19 +91,102 @@ Ohm`s law till us the electric Current through a wire in  a ciruit.
 ](https://en.m.wikipedia.org/wiki/File:Simple_electrical_schematic_with_Ohms_law.png))
 
 ## circuits
+This section is about circuits implementations.
 ### On/Off LED Circuit
+The objective of the circuit is to implement an on/off LED loop. 
 #### Components
+- Arduino Uno R3.
+- Breadboad.
+- 220ohm resistor.
+- LED
+- Jumper Wire
 #### Code
+```
+// C++ code
+//
+//The code sets pin 12 as an output and turn it on/of 
+//with a one second delay
+
+//Define pin 12 as a constant
+#define LED_PIN 12  
+void setup()
+{
+  //set up pin 12 as an output
+  pinMode(LED_PIN , OUTPUT); 
+}
+
+void loop()
+{
+  //turn pin 12 on (high)
+  digitalWrite(LED_PIN , HIGH); 
+  // Wait for 1000 milliseconds (1 second)
+  delay(1000);
+  //turn pin 12 off(low)
+  digitalWrite(12, LOW);
+  //wait for 1000 milliseconds (1 second)
+  delay(1000); 
+}
+```
 #### Digital Circuit
+![image](https://github.com/user-attachments/assets/dfcadb87-2733-4dfa-90f6-c8f148cdd65d)
+[Tinkercad link](https://www.tinkercad.com/things/6mtscSBUH3T-1led-and-1resistor-circuit?sharecode=A88vDCyh6bdy0jNWU5W7For1Mzw2JRQiKFfG-1IOvtw)
 #### Physical Circuit
+
 #### Bug report
-
-
-
+Poor indentation  and commenting at the first version of the code witch made it hard to read.
 
 ### Fade in/out LED Circuit
+The objective of the ciruit is to make the LED fade in/out.
 #### Components
+- Arduino Uno R3.
+- Breadboad.
+- 220ohm resistor.
+- LED
+- Jumper Wire
 #### Code
+```
+// C++ code
+//
+// The code make the LED pin fade in/out by
+// using digttal PWM pin number 11
+
+// Define pin 11 as a constant
+#define LED_PIN 11  
+
+void setup() {
+  // Set up pin 11 as an output
+  pinMode(LED_PIN, OUTPUT);
+} // end of setup()
+
+void loop() {
+  //Increase the brightness of the LED (from 0 to 255)
+  for (int i = 0; i <= 255; i++) {
+    // increment pin 11 value to increase brightness
+    analogWrite(LED_PIN, i); 
+    // Wait for 5 milliseconds before increasing brightness
+    delay(5); 
+  }
+
+  //Decrease the brightness of the LED (from 255 to 0)
+  delay(1000);  
+  // Gradually decrease the brightness of the LED (from 255 to 0)
+  for (int i = 255; i >= 0; i--) {
+    // decrement pin 11 value to decrease brightness
+    analogWrite(LED_PIN, i); 
+    // Wait for 5 milliseconds before decreasing brightness
+    delay(5); 
+  }
+
+  // Wait for 1000 milliseconds (1 second) after reaching zero brightness
+  delay(1000);  
+}//end of loop()
+
+```
 #### Digital Circuit
+![image](https://github.com/user-attachments/assets/86588ee4-0dba-44cd-9b1a-f0a02ac90b61)
+
+[Tinkercad link](https://www.tinkercad.com/things/fcb8VSDf7Mx-fade-in-out-led?sharecode=yD5MbceEbOKH0mRyDnn8-NINcv56IyzxM4bcpRsiwLc)
+
 #### Physical Circuit
 #### Bug report
+I needed to add one second delay for the digital version to see the LED fading
