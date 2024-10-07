@@ -135,6 +135,8 @@ void loop()
 ```
 #### Digital Circuit
 ![image](https://github.com/user-attachments/assets/dfcadb87-2733-4dfa-90f6-c8f148cdd65d)
+
+
 [Tinkercad link](https://www.tinkercad.com/things/6mtscSBUH3T-1led-and-1resistor-circuit?sharecode=A88vDCyh6bdy0jNWU5W7For1Mzw2JRQiKFfG-1IOvtw)
 #### Physical Circuit
 
